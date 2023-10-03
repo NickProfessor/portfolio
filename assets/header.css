@@ -1,0 +1,26 @@
+.cabecalho{
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 6px 18px rgba(1, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 1em;
+}
+
+.cabecalho__titulo{
+    font-size: 4em;
+    padding: 0.8em 1em;
+}
+
+.cabecalho__navegacao{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    margin-right: 4em;
+}
+.navegacao__item{
+    color: var(--cor-principal);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 500;
+}
