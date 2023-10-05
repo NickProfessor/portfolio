@@ -9,7 +9,7 @@
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">
-            Nickollas Silva | Portfólio
+            Nickollas Silva <b>|</b> Portfólio
         </h1>
         <!-- Esse cabecalho tera uma animação e diminuirá de tamanho. E ficará no topo da página sempre-->
         <nav class="cabecalho__navegacao">
@@ -18,15 +18,42 @@
             <a href="#" class="navegacao__item" onclick="aviso()">Projetos</a>
             <a href="#" class="navegacao__item" onclick="aviso()">Habilidades</a>
             <a href="#" class="navegacao__item" onclick="aviso()">Contato</a>
+            <span class="cabecalho__navegacao__menu-v"><p href="#" id="cabecalho__navegacao__menu-v"  onclick="exibirItens()">V</p></span>
         </nav>
     </header>
 
+
+    <footer class="rodape">
+        <p class="rodape__texto">
+            <i>Site em desenvolvimento...</i><br/>
+            Etapa atual: Desenvolver no Mobile
+        </p>
+    </footer>
+
+
     <script>
-        alert("Essa página ainda está em desenvolvimento");
+        //alert("Essa página ainda está em desenvolvimento");
 
         // Essa função sempre será chamada quando um link não estiver com destino definido
         function aviso(){
             alert("Essa página ainda está em desenvolvimento, portatnto, alguns recursos são limitados")
+        }
+        
+        
+
+        function exibirItens(){
+            var elementos = document.getElementsByClassName("navegacao__item");
+            var posicaoV = document.getElementById("cabecalho__navegacao__menu-v");
+            for (var i = 0; i < elementos.length; i++) { // Vai checar cada item que utiliza a class"navegacao__item" e aplica os devidos comando em cada um
+                if (elementos[i].style.display === "none") {
+                    elementos[i].style.display = "block";
+                    posicaoV.style.transform = "rotate(180deg)";
+
+                } else {
+                    elementos[i].style.display = "none";
+                    posicaoV.style.transform = "rotate(0deg)";
+                }
+            }
         }
     </script>
 </body>

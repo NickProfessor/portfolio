@@ -1,30 +1,87 @@
 .cabecalho{
-    background-color: var(--cor-secundaria);
-    box-shadow: 5px 3px 18px rgba(1, 0, 0, 0.5);
     display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
 }
 
 .cabecalho__titulo{
-    font-size: 2em;
-    padding: 1em 0;
     text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.8);
+    text-align: center;
+    max-width: 300px;
+}
+
+b{
+    display: none;
 }
 
 .cabecalho__navegacao{
     display: flex;
-    align-items: center;
-    padding: 1em auto;
-    margin-right: 1em;
-    gap: 2em;
-}
-.navegacao__item{
-    color: var(--cor-principal);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 600;
-    text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.4)
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5em;
+    margin-top: 30px;
 }
 
+.navegacao__item{
+    display: block;
+    color: var(--cor-principal);
+    font-size: 1em;
+    font-weight: 600;
+    text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.4);
+}
+
+.cabecalho__navegacao__menu-v{
+    background-color: var(--cor-secundaria);
+    box-shadow: 5px 3px 18px rgba(1, 0, 0, 0.5);
+    width: 30px;
+    align-self: center;
+    padding: 0.5em 0.4em;
+    border-radius: 100%;
+}
+
+.cabecalho__navegacao__menu-v p{
+    transform: rotate(180deg);
+}
+
+
+
+
+@media (min-width:1724px)
+{
+    .cabecalho{
+        background-color: var(--cor-secundaria);
+        box-shadow: 5px 3px 18px rgba(1, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    
+    .cabecalho__titulo{
+        font-size: 2em;
+        padding: 1em 0;
+        text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.8);
+    }
+
+    b{
+        display: block;
+    }
+    
+    .cabecalho__navegacao{
+        display: flex;
+        align-items: center;
+        padding: 1em auto;
+        margin-right: 1em;
+        gap: 2em;
+    }
+    .navegacao__item{
+        color: var(--cor-principal);
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        font-weight: 600;
+        text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.4);
+    }
+    
+    
+}
