@@ -1,87 +1,27 @@
-.cabecalho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 0;
+.cabecalho__menu{
+    /* background-color: aqua; */
+    position: fixed;
+    top: 0;
+    padding: 20px 40px 10px 20px;
+    border-radius: 0 20% 20% 0;
+}
+.menu-hamburger{
+    font-size: 2.5em;
 }
 
-.cabecalho__titulo{
-    text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.8);
-    text-align: center;
-    max-width: 300px;
-}
-
-b{
+.cabecalho__nav__items{
     display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 1em 3em 1em 1em;
 }
 
-.cabecalho__navegacao{
+.cabecalho__nav__lista{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 2.5em;
-    margin-top: 30px;
-}
+    gap: 20px;
 
-.navegacao__item{
-    display: block;
-    color: var(--cor-principal);
-    font-size: 1em;
-    font-weight: 600;
-    text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.4);
-}
-
-.cabecalho__navegacao__menu-v{
-    background-color: var(--cor-secundaria);
-    box-shadow: 5px 3px 18px rgba(1, 0, 0, 0.5);
-    width: 30px;
-    align-self: center;
-    padding: 0.5em 0.4em;
-    border-radius: 100%;
-}
-
-.cabecalho__navegacao__menu-v p{
-    transform: rotate(180deg);
-}
-
-
-
-
-@media (min-width:1724px)
-{
-    .cabecalho{
-        background-color: var(--cor-secundaria);
-        box-shadow: 5px 3px 18px rgba(1, 0, 0, 0.5);
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
-    }
-    
-    .cabecalho__titulo{
-        font-size: 2em;
-        padding: 1em 0;
-        text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.8);
-    }
-
-    b{
-        display: block;
-    }
-    
-    .cabecalho__navegacao{
-        display: flex;
-        align-items: center;
-        padding: 1em auto;
-        margin-right: 1em;
-        gap: 2em;
-    }
-    .navegacao__item{
-        color: var(--cor-principal);
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1em;
-        font-weight: 600;
-        text-shadow: 2px 6px 18px rgba(1, 0, 0, 0.4);
-    }
-    
-    
 }

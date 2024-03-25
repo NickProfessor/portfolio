@@ -4,57 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nickollas Silva | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo">
-            Nickollas Silva <b>|</b> Portfólio
-        </h1>
-        <!-- Esse cabecalho tera uma animação e diminuirá de tamanho. E ficará no topo da página sempre-->
-        <nav class="cabecalho__navegacao">
-            <a href="#" class="navegacao__item" onclick="aviso()">Home</a>
-            <a href="#" class="navegacao__item" onclick="aviso()">Sobre mim</a>
-            <a href="#" class="navegacao__item" onclick="aviso()">Projetos</a>
-            <a href="#" class="navegacao__item" onclick="aviso()">Habilidades</a>
-            <a href="#" class="navegacao__item" onclick="aviso()">Contato</a>
-            <span class="cabecalho__navegacao__menu-v"><p href="#" id="cabecalho__navegacao__menu-v"  onclick="exibirItens()">V</p></span>
-        </nav>
+        <div class="cabecalho__menu">
+            <span class="menu-hamburger"><i class="fa-solid fa-bars"></i></span>
+            <nav class="cabecalho__nav__items">
+                <ul class="cabecalho__nav__lista">
+                    <li><a href="#" class="cabecalho__nav__lista-item">Sobre mim</a></li>
+                    <li><a href="#" class="cabecalho__nav__lista-item">Projetos</a></li>
+                    <li><a href="#" class="cabecalho__nav__lista-item">Contato</a></li>
+                </ul>
+                <div class="cabecalho__nav__links">
+                    <span class="nav__links-link"><i class="fa-brands fa-github"></i></span>
+                    <span><i class="fa-brands fa-linkedin"></i></span>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <main>
+        <section class="secao__sobre">
+            <section class="secao__sobre-descricao">
+                <h1>Olá mundo! Eu sou o Nick.</h1>
+                <p>
+                    Estudo programação desde 2022, e ultimamente tenho dedicado boa 
+                    parte do meu tempo para me especializar na área como 
+                    desenvolvedor FullStack, com foco para o desenvolvimento web. 
+                </p>
+            </section>
+            <section class="secao__sobre-foto">
+                <img src="" alt="" srcset="">
+            </section>
+        </section>
+    </main>
 
-    <footer class="rodape">
-        <p class="rodape__texto">
-            <i>Site em desenvolvimento...</i><br/>
-            Etapa atual: Desenvolver no Mobile
-        </p>
-    </footer>
-
-
-    <script>
-        //alert("Essa página ainda está em desenvolvimento");
-
-        // Essa função sempre será chamada quando um link não estiver com destino definido
-        function aviso(){
-            alert("Essa página ainda está em desenvolvimento, portatnto, alguns recursos são limitados")
-        }
-        
-        
-
-        function exibirItens(){
-            var elementos = document.getElementsByClassName("navegacao__item");
-            var posicaoV = document.getElementById("cabecalho__navegacao__menu-v");
-            for (var i = 0; i < elementos.length; i++) { // Vai checar cada item que utiliza a class"navegacao__item" e aplica os devidos comando em cada um
-                if (elementos[i].style.display === "none") {
-                    elementos[i].style.display = "block";
-                    posicaoV.style.transform = "rotate(180deg)";
-
-                } else {
-                    elementos[i].style.display = "none";
-                    posicaoV.style.transform = "rotate(0deg)";
-                }
-            }
-        }
-    </script>
 </body>
 </html>

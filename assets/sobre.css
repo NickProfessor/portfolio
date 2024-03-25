@@ -1,0 +1,11 @@
+
+.secao__sobre{
+    width: 80%;
+    margin: 5.5em auto 0 auto;
+    font-size: 2em;
+}
+
+.secao__sobre h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
