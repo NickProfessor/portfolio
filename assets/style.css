@@ -10,7 +10,8 @@
 :root{
     --fonte-principal: 'Poppins';
     --cor-principal: #3b3131;
-    --cor-secundaria: #362c29;
+    --cor-secundaria: rgb(54, 44, 41);
+    --cor-terciaria: rgb(100, 91, 88);
     --cor-de-fundo: #bfb9b7;
 }
 
@@ -18,4 +19,8 @@ body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     color: var(--cor-principal);
+}
+
+.hidden{
+    display: none;
 }

@@ -6,6 +6,15 @@
 }
 
 .secao__sobre h1{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
 }
+
+.secao__sobre p{
+    margin-top: 1em;
+    line-height: 1.1em;
+}
+
+@media (min-width: 768px) { 
+
+ }
