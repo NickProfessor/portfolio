@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+            <defs>
+                <!-- Define o filtro SVG com efeitos de desenho -->
+                <filter id="coffee-filter">
+                    <!-- Aqui você pode adicionar vários filtros para alcançar o efeito desejado -->
+                    <feColorMatrix type="matrix" values="1 0 0 0 191
+                                                         0 1 0 0 185
+                                                         0 0 1 0 183
+                                                         0 0 2 0 0" />
+                    <!-- Este exemplo usa um filtro de matriz de cores para converter a imagem em preto e branco -->
+                </filter>
+                <filter id="original">
+                    <feColorMatrix type="matrix" values="1 0 0 0 0
+                                                         0 1 0 0 0
+                                                         0 0 1 0 0
+                                                         0 0 0 1 0" />
+                </filter>
+            </defs>
+        </svg>

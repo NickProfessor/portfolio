@@ -1,0 +1,93 @@
+.secao__inicio{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.secao__inicio h2{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.secao__inicio p{
+    max-width: 80%;
+    margin: 2em auto;
+    font-size: 1.4em;
+}
+
+.container-imagem{
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.secao__inicio img{
+    filter: url(../img/filtro.svg#coffee-filter);
+    width: 100%;
+    height: 100%;
+    /* transition: filter 1s ease-in; */
+}
+
+.gradient-overlay{
+    position: absolute; /* posiciona o gradiente sobre a imagem */
+    bottom: 0; /* alinha o gradiente com a parte inferior do contêiner */
+    left: 0; /* alinha o gradiente com a borda esquerda do contêiner */
+    width: 100%; /* garante que o gradiente cubra toda a largura do contêiner */
+    height: 200px; /* altura do gradiente */
+    background-image: linear-gradient(to bottom, transparent, var(--cor-de-fundo)); /* cria um gradiente linear da parte inferior transparente para uma cor escura */
+}
+
+.inicio__contato{
+    margin-top: 2em;
+}
+
+.inicio__contato h3{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.inicio__redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 2em;
+}
+
+.inicio__redes-sociais i{
+    color: var(--cor-principal);
+    font-size: 1.8em;
+}
+
+.inicio__redes-sociais i{
+    color: var(--cor-principal);
+    font-size: 1.8em;
+}
+
+.inicio__redes-sociais i:hover{
+    animation: moveUpDown 0.3s ease ;
+}
+
+/* .secao__inicio .container-imagem:hover > img{
+    filter: none;
+} */
+
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0); /* Inicia na posição inicial */
+    }
+    45% {
+      transform: translateY(-5px); /* Move para cima */
+    }
+    85% {
+      transform: translateY(5px); /* Move para baixo além da posição inicial */
+    }
+
+    100% {
+      transform: translateY(0); /* Volta para a posição inicial */
+    }
+  }

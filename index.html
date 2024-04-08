@@ -10,9 +10,10 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho__menu">
-            <button class="cabecalho__btn-hamburguer"><span class="menu-hamburguer"><i class="fa-solid fa-bars" id="desenho-barras"></i></span></button>
+            <button class="cabecalho__btn-hamburguer hidden"><span class="menu-hamburguer"><i class="fa-solid fa-bars" id="desenho-barras"></i></span></button>
             <nav class="cabecalho__nav__items hidden">
                 <ul class="cabecalho__nav__lista">
+                    <li><a href="#" class="cabecalho__nav__lista-item">Início</a></li>
                     <li><a href="#" class="cabecalho__nav__lista-item">Sobre mim</a></li>
                     <li><a href="#" class="cabecalho__nav__lista-item">Projetos</a></li>
                     <li><a href="#" class="cabecalho__nav__lista-item">Contato</a></li>
@@ -32,7 +33,25 @@
     </header>
 
     <main>
-        <section class="secao__sobre">
+        <section class="secao secao__inicio">
+            <h2>Olá, mundo!</h2>
+            <div class="inicio__apresentacao">
+                <p>Me chamo Nickollas, e sou desenvolvedor Full Stack</p>
+                <div class="container-imagem">
+                    <img src="img/nick.png" alt="">
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+            <div class="inicio__contato">
+                <h3>Vamos trabalhar juntos?</h3>
+                <div class="inicio__redes-sociais">
+                    <a href="https://github.com/NickProfessor" target="_blank"><span class="nav__links-link"><i class="fa-brands fa-github"></i></span></a>
+                    <a href=""><span><i class="fa-brands fa-linkedin"></i></span></a>
+                    <a href=""><span><i class="fa-solid fa-envelope"></i></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="secao secao__sobre">
             <section class="secao__sobre-descricao">
                 <h1>Olá mundo! Eu sou o Nick.</h1>
                 <p>
